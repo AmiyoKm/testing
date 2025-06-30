@@ -24,3 +24,9 @@ tidy: ## Tidy the modules
 	go mod tidy
 
 test-all: test test-bench ## Run all tests with benchmarks
+
+cover: ## Generate coverage report
+	go test -coverprofile=coverage.out ./...
+
+cover-html: ## Open coverage report in browser
+	go tool cover -html=coverage.out
