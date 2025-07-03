@@ -72,7 +72,7 @@
 </nav>
 <main>
 
-<ol><li><a href="/post/hello-world">Hello world</a></li><li><a href="/post/hello-world-2">Hello world 2</a></li></ol>
+<ol><li><a href="/post/hello%20world">Hello world</a></li><li><a href="/post/hello%20world%202">Hello world 2</a></li></ol>
 
 </main>
 </div>

@@ -21,12 +21,11 @@ func SumAll(arrays ...[]int) []int {
 
 func SumAllTails(arrays ...[]int) []int {
 	sums := []int{}
-
 	for _, arr := range arrays {
-		if len(arr) > 0 {
-			sums = append(sums, Sum(arr[1:]))
-		} else {
+		if len(arr) == 0 {
 			sums = append(sums, 0)
+		} else {
+			sums = append(sums, Sum(arr[1:]))
 		}
 	}
 	return sums
